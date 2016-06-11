@@ -2,9 +2,9 @@ from model.Bacteria import Bacteria
 from model.Aerobs import Aerobs
 
 def main():
-    print "Let's create new bacteria"
+    "Let's create new bacteria"
 
-    bacteria = Bacteria("Escherichia", "Coli")
+    bacteria = Bacteria("Ecola", "Escherichia Coli")
 
     bacteria.printName()
     bacteria.printSpecies()
