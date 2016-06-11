@@ -1,5 +1,8 @@
 class Bacteria:
-    name = ""
+    _name = ""
 
     def __init__(self, name):
-        self.name = name
+        self._name = name
+
+    def printName(self):
+        print "My name is: " + self._name
