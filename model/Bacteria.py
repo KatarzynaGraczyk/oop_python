@@ -1,17 +1,20 @@
 class Bacteria:
-    _name = ""
-    _species = ""
+    'Common base class for all bacterias'
+    name = ""
+    species = ""
     metabolismType = ""
+    bacteriaCount = 0
 
     def __init__(self, name, species):
-        self._name = name
-        self._species = species
+        self.name = name
+        self.species = species
+        Bacteria.bacteriaCount += 1
 
-    def printName(self):
-        print "My name is: " + self._name
+    def displayName(self):
+        print "My name is: ", self.name
 
-    def printSpecies(self):
-        print "My species name is: " + self._species
+    def displaySpecies(self):
+        print "My species name is: ",  self.species
 
-    def printMetabolism(self):
-        print "My metabolism type is: " + self.metabolismType
+    def displayMetabolism(self):
+        print "My metabolism type is: ", self.metabolismType
