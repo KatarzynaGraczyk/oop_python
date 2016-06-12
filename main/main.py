@@ -1,5 +1,6 @@
 from model.Bacteria import Bacteria
 from model.Aerobs import Aerobs
+from model.Anaerobs import Anaerobs
 
 def main():
     "Let's create new bacteria"
@@ -9,8 +10,8 @@ def main():
     bacteria.printName()
     bacteria.printSpecies()
 
-    aerobBacteria = Aerobs()
-    aerobBacteria.printMetabolism()
+    anaerobBacteria = Anaerobs()
+    anaerobBacteria.printMetabolism()
 
 if __name__ == "__main__":
     main()
