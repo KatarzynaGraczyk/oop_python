@@ -7,8 +7,6 @@ class parseFileBacteriaList:
         self.fileName = fileName
 
     def readFile(self):
-        file = open(self.fileName).readline()
-
-
-
-
+        file = open(self.fileName).readlines()
+        for linia in file:
+            print linia
