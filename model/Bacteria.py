@@ -4,10 +4,12 @@ class Bacteria:
     species = ""
     metabolismType = ""
     bacteriaCount = 0
+    pathogenicity = ""
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, pathogenicity):
         self.name = name
         self.species = species
+        self.pathogenicity = pathogenicity
         Bacteria.bacteriaCount += 1
 
     def displayName(self):
@@ -18,3 +20,11 @@ class Bacteria:
 
     def displayMetabolism(self):
         print "My metabolism type is: ", self.metabolismType
+
+    #Checking and printing pathogenicity of bacteria
+
+    def displayPathogenicity(self):
+        if self.pathogenicity == "Yes":
+            print "I'm pathogenic"
+        else:
+            print "I'm not pathogenic"

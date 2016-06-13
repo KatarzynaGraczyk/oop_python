@@ -4,19 +4,20 @@ from model.Anaerobs import Anaerobs
 
 def main():
     print "Let's create new bacteria!"
+
     "This would create first object of Bacteria class"
-    bacteria_1 = Bacteria("Ecola", "Escherichia Coli")
+    bacteriaFirst = Bacteria("Ecola", "Escherichia Coli", "Yes")
 
-    "This would create second object of  bacteria class"
-    bacteria_2 = Bacteria("Psea", "Pseudomonas aeruginosa")
+    bacteriaFirst.displayName()
+    bacteriaFirst.displaySpecies()
+    bacteriaFirst.displayPathogenicity()
 
-    bacteria_1.displayName()
-    bacteria_1.displaySpecies()
-
+    "Instantiation inherited reference object "
     anaerobBacteria = Anaerobs()
     anaerobBacteria.displayMetabolism()
 
     print "Total bacterial count: %d " % Bacteria.bacteriaCount
+
 
 if __name__ == "__main__":
     main()
