@@ -8,5 +8,11 @@ class parseFileBacteriaList:
 
     def readFile(self):
         file = open(self.fileName).readlines()
+        listBacteria = []
+        listDeseases = []
         for linia in file:
-            print linia
+            line = linia.split("\t")
+            listBacteria.append(line[0])
+            listDeseases.append(line[1])
+        print listBacteria
+        print listDeseases
