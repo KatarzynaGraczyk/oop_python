@@ -14,5 +14,5 @@ class parseFileBacteriaList:
             line = linia.split("\t")
             listBacteria.append(line[0])
             listDeseases.append(line[1])
-        print listBacteria
-        print listDeseases
+        print(listBacteria)
+        print(listDeseases)
